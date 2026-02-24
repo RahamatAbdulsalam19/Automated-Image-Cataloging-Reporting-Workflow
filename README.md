@@ -33,7 +33,5 @@ Marketing asset tracking
 Make (Integromat)
 HTTP API module
 Iterator & Aggregator modules
-
 Google Sheets API
-
 Gmail API
