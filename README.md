@@ -1,16 +1,39 @@
 # Automated-Image-Cataloging-Reporting-Workflow
-This project demonstrates the design and implementation of a fully automated workflow using Make (formerly Integromat) integrated with Google Sheets and Gmail. The workflow fetches image data via API calls, processes it through advanced pagination, and organizes the results into a structured Google Sheets catalog. Each entry includes both the image URL and a descriptive metadata field, enabling efficient content management and retrieval.
 
-## Key features include:
+## Project Description
+Built an end-to-end automation workflow that extracts paginated image data from an external API, processes the results, stores structured outputs in Google Sheets, and sends automated email summaries.
+The system handles multi-page API responses using advanced pagination logic, dynamically iterates through returned datasets, and aggregates results before triggering a final notification.
 
-API Integration & Pagination: Automated retrieval of large datasets with advanced pagination logic.
+## What the system does:
+Makes an authenticated API request to retrieve total item count
+Automatically paginates through all result pages
+Extracts image URLs and descriptions
+Iterates through each record
+Stores structured data in Google Sheets
+Aggregates page results into a consolidated dataset
+Sends an automated Gmail summary notification
 
-Data Processing: Iteration and aggregation of image descriptions for streamlined organization.
+## Key Capabilities:
+Advanced pagination handling
+API authentication and dynamic data retrieval
+Iterator-based data processing
+Real-time Google Sheets integration
+Automated reporting via email
+Scalable architecture for large datasets
 
-Google Sheets Integration: Real-time population of a catalog with image URLs and descriptive metadata.
+## Business Use Case:
+This automation eliminates manual scraping and reporting of media assets. It can be adapted for:
+Product catalog ingestion
+Content moderation pipelines
+Media library monitoring
+Stock image dataset compilation
+Marketing asset tracking
 
-Automated Notifications: Email reports sent via Gmail to keep stakeholders updated on new entries.
+## Tools Used:
+Make (Integromat)
+HTTP API module
+Iterator & Aggregator modules
 
-Scalability: Configured to run every 15 minutes, ensuring continuous synchronization and up-to-date records.
+Google Sheets API
 
-This project highlights expertise in workflow automation, API handling, and cross-platform integration, showcasing how complex data pipelines can be simplified into efficient, reusable systems.
+Gmail API
